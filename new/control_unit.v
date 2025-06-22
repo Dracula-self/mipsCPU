@@ -93,9 +93,9 @@ module control_unit(
             6'b001111: begin  // lui
                 ALUSrc = 1;    // 使用立即数
                 RegWrite = 1;  // 写寄存器
-                ZeroExt = 1;   // 零扩展立即数 - 添加这一行
-                ALUOp1 = 1;    // 设置ALUOp为11 - 添加这一行
-                ALUOp0 = 1;    // 设置ALUOp为11 - 添加这一行
+                ZeroExt = 1;   // 零扩展立即数
+                ALUOp1 = 1;    // 设置ALUOp为11
+                ALUOp0 = 1;    // 设置ALUOp为11
             end
             default: begin
             end
